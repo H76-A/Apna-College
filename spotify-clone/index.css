@@ -1,0 +1,57 @@
+body{
+    font-family: "montserrat", Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;/* 16px*/
+    overflow: auto;
+}
+.sidebar{
+    background-color: #000;
+    width: 240px;
+    border-radius: 1rem;/* 16px*/
+
+}
+.sidebar .nav{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: .05rem 0.75rem ;
+}
+.sidebar .nav-option{
+    line-height: 2.5rem;
+   opacity: .7;
+   padding: 0.4rem;
+}
+.sidebar .nav-option:hover{
+    opacity: 1;
+}
+.sidebar .nav-option i{
+   font-size: 1.2rem; 
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.music-player{
+    background-color: aqua;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
