@@ -1,0 +1,14 @@
+body {
+  background-color: aquamarine;
+}
+img {
+  height: 100px;
+  width: 100px;
+}
+#error{
+    background-color: darkred;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

@@ -1,0 +1,4 @@
+
+
+To user all my styel or js  with our expres or  in ejs files or vies  
+we user  app.use(expres.static(folder_name ))  // folder_names should always be Public 
