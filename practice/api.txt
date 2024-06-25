@@ -1,0 +1,6 @@
+
+Axios :
+
+a platform to get or post  api data
+here we dont need to convert data to json it is already in json formate
+
