@@ -1,0 +1,6 @@
+
+
+// to generate string type of crate uniqe id for new array or post 
+we use UUID
+
+npm install UUID
