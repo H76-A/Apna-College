@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    
+    <style>
+      table,
+      td,
+      tr,
+      th {
+        border: 1px solid;
+      }
+      table {
+        width: 50%;
+      }
+      button{
+        cursor: pointer;
+      }
+      .new_user{
+        padding:10px;
+        margin-bottom: 10px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <form method="Get" action="/user/new_user">
+    <button class="new_user" >Add New User</button>
+  </form>
+    <table>
+      <th>S#</th>
+      <th>Id</th>
+      <th>User Name</th>
+      <th>Email</th>
+      <th>action</th>
+      <th>Remove</th>
+      <% let i = 1 %> <% for(user of data){ %>
+
+      <tbody>
+        <td><%= i %></td>
+        <td><%= user.id %></td>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td ><form method='Get'action="/user/<%= user.id %>/edit"><button>Edit</button></form></td>
+        <td ><form method='Post'action="/user/<%= user.id %>?_method=PATCH"><button>Remove</button></form></td>
+      </tbody>
+      <% i++ %> <% } %>
+    </table>
+  </body>
+</html>
